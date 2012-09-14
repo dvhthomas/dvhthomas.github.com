@@ -1,0 +1,24 @@
+---
+layout: default
+title: welcome
+---
+
+<section id="content">
+	<ol id="posts-list" class="hfeed">
+{% for post in site.posts %}
+		<li>
+			<article class="hentry">
+				<header>
+					<h2 class="entry-title"><a href="{{ post.url }}" title="Permalink to {{ post.title }}">{{ post.title }}</a></h2>
+				</header>
+				<footer class="post-info">
+					<abbr title="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</abbr>
+				</footer>
+				<div class="entry-content">
+					<p>{{ post.abstract }}&hellip;</p>
+				</div>
+			</article>
+		</li>
+{% endfor %}
+	</ol>
+</section>
