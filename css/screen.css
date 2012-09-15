@@ -269,6 +269,10 @@ body {
   text-shadow: 0 1px 0px rgba(255, 255, 255, 0.4);
 }
 
+h2, h3, h4, h5 {
+  color: rgb(56, 118, 29);
+  text-decoration: underline;
+}
 /* main blog list */
 .entry-title a:focus, .entry-title a, .entry-title a:visited {
   color: #00cd00;
