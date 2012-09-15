@@ -4,7 +4,7 @@ title: Digits by Me
 ---
 
 <section id="content">
-	<ol id="posts-list" class="hfeed">
+	<ol class="posts-list hfeed">
 {% for post in site.posts %}
 		<li>
 			<article class="hentry">
@@ -12,10 +12,12 @@ title: Digits by Me
 					<h2 class="entry-title"><a href="{{ post.url }}" title="Permalink to {{ post.title }}">{{ post.title }}</a></h2>
 				</header>
 				<footer class="post-info">
-					<abbr title="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</abbr>
+					<abbr title="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</abbr>
 				</footer>
 				<div class="entry-content">
+					{% if post.abstract %}
 					<p>{{ post.abstract }}&hellip;</p>
+					{% endif %}
 				</div>
 			</article>
 		</li>

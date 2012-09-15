@@ -1,0 +1,4 @@
+<h2 class="icon-tags">Tags</h2>
+{% for tag in site.tags %}
+  <span class="label info"><a href="/tags.html#{{ tag | first }}">{{ tag | first }}</a></span>
+{% endfor %}

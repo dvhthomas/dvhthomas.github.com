@@ -1,0 +1,23 @@
+---
+layout: default
+title: Tags 
+---
+<section id="content">
+<h2>Articles by Tag</h2>
+<ul>
+{% for tag in site.tags %}
+  <li class="icon-tag"><a name="{{ tag | first }}">{{ tag | first }}</a>
+    <ul>
+    {% for posts in tag %}
+      {% for post in posts %}
+      {% if post.title %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </li>
+{% endfor %}
+</ul>
+Page generated: {{ site.time | date_to_string }}
+</section>

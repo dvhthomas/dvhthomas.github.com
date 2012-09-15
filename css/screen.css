@@ -83,10 +83,12 @@ that width despite padding or borders */
   padding: 20px;
 }
 
-/* post list */
-.post-list li {
+/* index page with post list */
+.posts-list li {
   list-style: none;
+  padding-bottom: 1em;
 }
+
 /* footer */
 .about {
   text-align: center;
@@ -111,7 +113,7 @@ that width despite padding or borders */
   color: rgb(150,150,150);
   text-decoration: none;
 }
-            
+
 /* Theme */
 body {
   background: #fff;
@@ -126,6 +128,7 @@ body {
 }
 .banner a:focus, h1 a, h1 a:visited {
   color: #00cd00;
+  text-shadow: 0 1px 0px #999;
 }
 
 /* main blog list */
@@ -152,13 +155,25 @@ body {
 .post-title {
   color: 00cd00;
 }
-
+.info {
+  background-color: rgb(220,240,220);
+}
+.info a, .info a:visited, .info:active {
+  color: #333;
+}
 /* Widgets */
 .label {
   min-width: 50px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  margin-right: .2em;
   padding: .2em .5em;
   text-align: center;
+}
+.label a, .label a:visited, .label a:active {
+  text-decoration: none;
+}
+.label a:hover {
+  text-decoration: underline;
 }
