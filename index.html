@@ -6,7 +6,7 @@ title: Digits by Me
 <section id="content">
 	<h1><i class="icon-th-list"></i>Recent Posts</h1>
 	<ol class="posts-list hfeed">
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 		<li>
 			<article class="hentry">
 				<header>
@@ -28,4 +28,23 @@ title: Digits by Me
 		</li>
 {% endfor %}
 	</ol>
+
+	<!-- Pagination links -->
+	<div class="pagination">
+		{% if paginator.previous_page %}
+		  {% if paginator.page > 2 %}
+		  <a href="/page{{paginator.previous_page}}" class="previous">Previous</a>
+		  {% else %}
+		  <a href="/" class="previous">Previous</a> 
+		  {% endif %}
+		{% else %}
+		<span class="previous">Previous</span>
+		{% endif %}
+		<span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		{% if paginator.next_page %}
+		<a href="/page{{paginator.next_page}}" class="next">Next</a>
+		{% else %}
+		<span class="next">Next</span>
+		{% endif %}
+	</div>
 </section>

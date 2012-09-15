@@ -1,12 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>{{ page.title }}</title>
-<link href='http://fonts.googleapis.com/css?family=Headland+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+	<title>{{ page.title }}</title>
+	<link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic|Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/normalize.css" />
 	<link rel="stylesheet" href="/css/pygments.css"/>
 	<link rel="stylesheet" href="/css/font-awesome.css"/>
 	<link rel="stylesheet" href="/css/screen.css"/>
+	<link rel="alternate" type="application/atom+xml" title="Latest posts" href="/atom.xml" /> 
 	<!--<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script type="text/javascript">
 		google.load("jquery", 1);
@@ -15,8 +16,14 @@
 <body>
 	<header class="banner">
 		<h1><a href="/" title="home">Digits By Me</a></h1>
-		<p>Dylan Does Digits, or just a place to save ideas so I don&rsquo;t have to learn them again.</p>
+		<p><em>Dylan Does Digits, or just a place to save ideas so I don&rsquo;t have to learn them again.</em></p>
 	</header>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="/" title="home">home</a></li>
+				<li><a href="/about.html" title="about">about</a></li>
+			</ul>
+		</nav>
 	<div class="grid">
 		<section class="main-content col-2-3">
 	{{ content }}
@@ -24,11 +31,20 @@
 		<aside class="sidebar col-1-3">
 			<section class="module">
 				{% include tag-list.html %}
+			<h1><i class="icon-link"></i>Connect</h1>
+			<ul class="connect">
+			<li class="icon-rss"><a href="/atom.xml" title="Atom feed">Subscribe</a></li>
+			<li class="icon-github"><a href="http://github.com/dvhthomas" title="github">My projects on Github</a></li>
+			<li class="icon-twitter"><a href="https://twitter.com/dvhthomas" title="Twitter profile for Dylan Thomas">dvhthomas</a></li>
+			<li class="icon-linkedin"><a href="http://www.linkedin.com/pub/dylan-thomas/1/94a/497" title="LinkedIn profile">Linked In</a></li>
+		</ul>
 			</section>
 		</aside>
 	</div> <!-- grid -->
 	<footer class="about grid">
 		<ul class="post-meta">
+			<li class="icon-rss"><a href="/atom.xml" title="Atom feed">Subscribe</a></li>
+			<li class="icon-github"><a href="http://github.com/dvhthomas" title="github">My projects on Github</a></li>
 			<li class="icon-twitter"><a href="https://twitter.com/dvhthomas" title="Twitter profile for Dylan Thomas">dvhthomas</a></li>
 			<li class="icon-linkedin"><a href="http://www.linkedin.com/pub/dylan-thomas/1/94a/497" title="LinkedIn profile">Linked In</a></li>
 		</ul>

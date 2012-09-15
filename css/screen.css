@@ -4,17 +4,17 @@ header, section, footer, aside, nav, article, figure { display: block; }
 /* Typography */
 /* general */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 145%;
+  font-family: 'Gentium Basic', Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 150%;
   }
 h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   }
 pre, code {
-  font-size: .9em;
+  font-size: .8em;
   font-family: 'Monaco', 'Consolas', monospace;
 }
 pre {
@@ -26,6 +26,40 @@ code {
   background-color: rgb(245, 245, 245);
   padding: .2em .5em;
 }
+
+blockquote {
+  font-size: 1.2em;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0.5em;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+blockquote:before {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: block;
+  content: "\201C";
+  font-size: 5em;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
 /* post page */
 .post-title {
   margin-bottom: 0;
@@ -36,7 +70,43 @@ code {
   font-size: 1.2em;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
-  line-height: 130%;
+  line-height: 150%;
+}
+
+/* main navigation */
+.main-nav {
+  border: none;
+  padding-top: .1em;
+  margin: 0;
+  background-color: #ccc;
+}
+.main-nav ul {
+  margin: 0 0 0 50px;
+  padding: 0;
+  list-style: none;
+}
+.main-nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+.main-nav ul li a {
+  background-color: #ccc;
+  color: #fff;
+  margin: 0;
+  padding: .2em 2em;
+  text-decoration: none;
+}
+.main-nav ul li a:hover {
+  text-decoration: none;
+  background: #36761d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #36761d 0%, #57b22c 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#36761d), color-stop(100%,#57b22c)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #36761d 0%,#57b22c 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #36761d 0%,#57b22c 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #36761d 0%,#57b22c 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #36761d 0%,#57b22c 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36761d', endColorstr='#57b22c',GradientType=0 ); /* IE6-9 */
 }
 
 /* Sidebar */
@@ -101,7 +171,7 @@ that width despite padding or borders */
 
 /* blog banner */
 .banner {
-  padding: 10px 50px 15px 50px;
+  padding: 10px 50px 10px 50px;
 }
 .banner h1 {
   font-family: "Open Sans";
@@ -120,9 +190,14 @@ that width despite padding or borders */
   padding: 0 20px;
 }
 
+.inset {
+  float: right;
+  margin: 10px;
+  max-width: 50%;
+}
+
 /* Post listing */
 .hentry {
-  border-bottom: 1px solid #eee;
   padding: .5em 0;
 }
 li:last-child .hentry, #content > .hentry {
@@ -219,6 +294,14 @@ li:last-child .hentry, #content > .hentry {
   padding-bottom: 1em;
 }
 
+/* social links */
+.connect a, a:visited, a:active {
+    color: rgb(100,100,100);
+    text-decoration: none;
+}
+.connect a:hover, a:focus {
+  text-decoration: underline;
+}
 /* footer */
 .about {
   text-align: center;
@@ -262,7 +345,7 @@ body {
   background: white;
 }
 .banner {
-  /*background:1; `ound-color: rgb(220,240,220);*/
+  /*background-color: rgb(220,240,220);*/
 }
 .banner a:focus, h1 a, h1 a:visited {
   color: rgb(56, 118, 29);
