@@ -2,14 +2,18 @@
 /* general */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 300;
-  line-height: 130%;
+  line-height: 140%;
   }
 h1, h2, h3, h4, h5 {
   font-family: 'Glegoo', serif;
   font-weight: 400;
   }
+pre, code {
+  font-size: .9em;
+  font-family: 'Monaco', 'Consolas', monospace;
+}
 
 /* post page */
 .post-abstract {
@@ -23,7 +27,7 @@ h1, h2, h3, h4, h5 {
   Page layout
 */
 .grid {
-  padding: 10px 50px 200px;
+  padding: 10px 50px 50px;
 }
 [class*='col-'] {
   float: left;
@@ -95,10 +99,9 @@ that width despite padding or borders */
 }
 /* individual post page */
 .post > header {
-  padding-bottom: 1em;
 }
 .post-title {
-  line-height: 120%;
+  line-height: 130%;
   margin-bottom: 1.2em;
 }
 .post-meta {
@@ -128,7 +131,7 @@ body {
 }
 .banner a:focus, h1 a, h1 a:visited {
   color: #00cd00;
-  text-shadow: 0 1px 0px #999;
+  text-shadow: 0 1px 0px rgba(255, 255, 255, 0.4);
 }
 
 /* main blog list */
