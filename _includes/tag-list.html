@@ -1,4 +1,6 @@
-<h2 class="icon-tags">Tags</h2>
+<h1><i class="icon-tags"></i>Tags</h1>
+<p class="tag-list">
 {% for tag in site.tags %}
   <span class="label info"><a href="/tags.html#{{ tag | first }}">{{ tag | first }}</a></span>
 {% endfor %}
+</p>

@@ -3,17 +3,15 @@ layout: default
 ---
 <article class="module post">
 	<header>
-		<h2 class="post-title">{{ page.title }}</h2>
-		<ul class="post-meta">
-			<li class="icon-calendar">{{ page.date | date_to_long_string }}</li>
-			<li class="icon-paper-clip"><a href="{{ page.url }}" title="permalink">permalink</a></li>
-			<li class="icon-tag">{{ page.tags | array_to_sentence_string }}</li>
-		</ul>
+		<h2 class="post-title"><i class="icon-bookmark"></i>{{ page.title }}</h2>
 		<p class="post-abstract">{{ page.abstract }}</p>
-		</ul>
 	</header>
 {{ content }}
 <footer>
-	
+		<ul class="post-meta">
+			<li class="icon-calendar">{{ page.date | date_to_long_string }}</li>
+			<li class="icon-paper-clip"><a href="{{ page.url }}" title="permalink">permalink</a></li>
+			<li class="icon-tags">{{ page.tags | array_to_sentence_string }}</li>
+		</ul>
 </footer>
 </article>

@@ -1,28 +1,51 @@
+/* HTML5 tags */
+header, section, footer, aside, nav, article, figure { display: block; }
+
 /* Typography */
 /* general */
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 300;
-  line-height: 140%;
+  line-height: 145%;
   }
 h1, h2, h3, h4, h5 {
-  font-family: 'Glegoo', serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   }
 pre, code {
   font-size: .9em;
   font-family: 'Monaco', 'Consolas', monospace;
 }
-
+pre {
+  background-color: rgb(245, 245, 245);
+  border-left: 2px solid #ccc;
+  padding: 1em 0 1em .5em;
+}
+code {
+  background-color: rgb(245, 245, 245);
+  padding: .2em .5em;
+}
 /* post page */
+.post-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .post-abstract {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
   line-height: 130%;
 }
 
+/* Sidebar */
+.tag-list {
+  line-height: 200%;
+}
+
+i {
+  padding-right: .5em;
+}
 /*
   Page layout
 */
@@ -43,6 +66,9 @@ pre, code {
 }
 .col-1-4 {
   width: 25%;
+}
+.col-3-4 {
+  width: 75%;
 }
 .col-1-8 {
   width: 12.5%;
@@ -74,18 +100,68 @@ that width despite padding or borders */
 
 /* blog banner */
 .banner {
-  padding: 10px 10px 15px 20px;
+  padding: 10px 50px 15px 50px;
 }
 .banner h1 {
-  font-size: 2em;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2.5em;
+  padding-top: 0;
 }
 .banner h1 a {
   text-decoration: none;
 }
+.banner p {
+  margin-bottom: 0;
+}
 
 .module {
-  padding: 20px;
+  padding: 0 20px;
 }
+
+/* Post listing */
+.hentry {
+  border-bottom: 1px solid #eee;
+  padding: .5em 0;
+}
+li:last-child .hentry, #content > .hentry {
+  border: 0;
+  margin: 0;
+}
+#content > .hentry {
+  padding: .5em 0;
+}
+.entry-title {
+  font-size: 1.429em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.entry-title a:link, .entry-title a:visited {
+  text-decoration: none;
+}
+.hentry .post-info * {
+  font-style: normal;}
+
+/* Content */
+.hentry footer {
+  /*margin-bottom: 2em;*/
+}
+.hentry footer address {
+  display: inline;
+}
+.posts-list footer address {
+  display: block;
+}
+/* Blog Index */
+.posts-list {
+  list-style: none;
+  margin: 0;
+}
+.posts-list .hentry {
+  padding-left: 200px;
+  position: relative;
+}
+.posts-list footer { left: 10px; position: absolute; top: 1.5em; width: 190px; }
 
 /* index page with post list */
 .posts-list li {
@@ -105,7 +181,9 @@ that width despite padding or borders */
   margin-bottom: 1.2em;
 }
 .post-meta {
+  font-size: .8em;
   margin-left: -1em;
+  margin-top: 2em;
 }
 .post-meta li {
   color: rgb(150,150,150);
@@ -116,8 +194,15 @@ that width despite padding or borders */
   color: rgb(150,150,150);
   text-decoration: none;
 }
+.post-meta li a:hover {
+  text-decoration: underline;
+}
 
-/* Theme */
+/*
+ *
+ Theme
+ *
+ */
 body {
   background: #fff;
   color: rgb(100,100,100);
@@ -127,10 +212,10 @@ body {
   background: white;
 }
 .banner {
-  background-color: rgb(220,240,220);
+  /*background:1; `ound-color: rgb(220,240,220);*/
 }
 .banner a:focus, h1 a, h1 a:visited {
-  color: #00cd00;
+  color: rgb(56, 118, 29);
   text-shadow: 0 1px 0px rgba(255, 255, 255, 0.4);
 }
 
