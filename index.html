@@ -13,7 +13,11 @@ title: Digits by Me
 					<h2 class="entry-title"><a href="{{ post.url }}" title="Permalink to {{ post.title }}">{{ post.title }}</a></h2>
 				</header>
 				<footer class="post-info">
-					<abbr title="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</abbr>
+					<div class="date">
+						<p>{{ post.date | date: "%d" }}
+							<span>{{ post.date | date: "%b" }}</span>
+						</p>
+					</div>
 				</footer>
 				<div class="entry-content">
 					{% if post.abstract %}
