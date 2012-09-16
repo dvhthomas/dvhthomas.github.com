@@ -61,7 +61,7 @@ namespace Tests
 
 I've used this technique many, many times on Windows XP but I just made the switch to Windows 7 for development, having skipped Vista entirely. When trying to run that test I get this error back from the test runner:
 
-{% highlight %}
+{% highlight csharp %}
 AddressAccessDeniedException: HTTP could not register URL http://+:12345/<…>.  Your process does not have access rights to this namespace
 {% endhighlight %}
 
