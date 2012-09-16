@@ -43,7 +43,7 @@ As I mentioned I’ve used this exact approach before with success. But that dar
 
 ## XML Hiccup
 
-Really annoying one. It turns out that the Windows installer database that is encapsulated in the *.MSI file treats square brackets as variable delimeters. So when you use a string that WiX is going to interpret and that string includes square brackets, you need to escape them. Naturally one example is in XPath. Here’s how it should look in WiX:
+Really annoying one. It turns out that the Windows installer database that is encapsulated in the *.MSI file treats square brackets as variable delimeters*. So when you use a string that WiX is going to interpret and that string includes square brackets, you need to escape them. Naturally one example is in XPath. Here’s how it should look in WiX:
 
 {% highlight xml%}
 <Component Id="ImportDirectory" Guid="{382E974D-69C6-4dc5-B2DD-FC8C8F5D5688}">
