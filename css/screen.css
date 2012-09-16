@@ -235,14 +235,14 @@ li:last-child .hentry, #content > .hentry {
   margin: 0;
 }
 .posts-list .hentry {
-  padding-left: 140px;
+  padding-left: 80px;
   position: relative;
 }
 .posts-list footer {
-  left: 10px;
+  left: -44px;
   top: 10px;
   position: absolute;
-  width: 120px;
+  width: 80px;
 }
 .date {
   width: 80px;
@@ -343,6 +343,7 @@ body {
 .main-content {
   border-right: 1px dotted #ccc;
   background: white;
+  padding-right: 10px;
 }
 .banner {
   /*background-color: rgb(220,240,220);*/
