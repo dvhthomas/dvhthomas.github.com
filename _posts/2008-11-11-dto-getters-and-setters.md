@@ -3,7 +3,7 @@ layout: post
 title: "DTO getters and setters"
 abstract: "If this was Java I wouldn't forget getters and setters. But it ain't!"
 category: 
-tags: [c#]
+tags: [csharp]
 ---
 I just burned about 30 minutes trying to figure out why my data transfer object (DTO) didn’t work. I have a C# Web Service (asmx) that accepts a simple class. There are two properties I care about:
 

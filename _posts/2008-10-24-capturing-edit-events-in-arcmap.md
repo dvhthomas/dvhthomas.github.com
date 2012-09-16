@@ -3,7 +3,7 @@ layout: post
 title: "Capturing edit events in ArcMap"
 abstract: "The difference between saving and edit and stopping the edit process is not immediately clear in ArcMap"
 category: 
-tags: [esri, c#]
+tags: [esri, csharp]
 ---
 ## Issue
 

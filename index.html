@@ -21,7 +21,7 @@ title: Digits by Me
 				</footer>
 				<div class="entry-content">
 					{% if post.abstract %}
-					<p>{{ post.abstract }}&hellip;</p>
+					<p>{{ post.abstract }}</p>
 					{% endif %}
 				</div>
 			</article>
@@ -33,18 +33,18 @@ title: Digits by Me
 	<div class="pagination">
 		{% if paginator.previous_page %}
 		  {% if paginator.page > 2 %}
-		  <a href="/page{{paginator.previous_page}}" class="previous">Previous</a>
+		  <a href="/page{{paginator.previous_page}}" class="previous">previous</a>
 		  {% else %}
-		  <a href="/" class="previous">Previous</a> 
+		  <a href="/" class="previous">previous</a> 
 		  {% endif %}
 		{% else %}
-		<span class="previous">Previous</span>
+		<span class="previous">previous</span>
 		{% endif %}
-		<span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		<span class="page_number">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 		{% if paginator.next_page %}
-		<a href="/page{{paginator.next_page}}" class="next">Next</a>
+		<a href="/page{{paginator.next_page}}" class="next">next</a>
 		{% else %}
-		<span class="next">Next</span>
+		<span class="next">next</span>
 		{% endif %}
 	</div>
 </section>
