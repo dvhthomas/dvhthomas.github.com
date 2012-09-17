@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "RegExp in JavaScript"
-abstract: "How to manipulate a DOM node the easy way"
+title: "RegExp constructor in JavaScript"
+abstract: "How to manipulate a DOM node styles the easy way, once you figure out that the JavaScript RegExp constructor takes a string."
 category: 
 tags: [javascript]
 ---
