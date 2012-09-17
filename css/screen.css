@@ -13,6 +13,9 @@ h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   }
+article img {
+  max-width: 700px;
+}
 pre, code {
   font-size: .8em;
   font-family: 'Monaco', 'Consolas', monospace;
@@ -131,7 +134,11 @@ i {
   width: 66.66%;
 }
 .col-1-3 {
-  width: 33.33%;
+  /* round down so that FF doesn't bump this
+   * below the .col-2-3 node because it 
+   * all adds up to a little bit more than
+   * 100% width */
+  width: 33%;
 }
 .col-1-2 {
   width: 50%;
