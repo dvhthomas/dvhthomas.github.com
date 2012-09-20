@@ -48,7 +48,7 @@ Customers *have a* billing address
 
 ![simple association](/images/uml-have-a.png)
 
-The relationship between a Customer and their Orders is described by the action orders. So it reads *a Customer **orders** an Order*.
+The relationship between a Customer and their Orders is described by the action orders. So it reads *a Customer __orders__ an Order*.
 
 ![simple association](/images/uml-relationship.png)
 

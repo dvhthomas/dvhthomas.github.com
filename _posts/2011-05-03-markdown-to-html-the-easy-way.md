@@ -26,4 +26,4 @@ Build providers are simple JSON-style files in Sublime Text 2. Here's what mine 
 
   `C:\Users\USERNAME\AppData\Roaming\Sublime Text 2\Packages\Markdown`
 
-* Open a Markdown file (with *.md file extension) and hit F7.
+* Open a Markdown file (with \*.md file extension) and hit F7.

@@ -5,7 +5,7 @@ header, section, footer, aside, nav, article, figure { display: block; }
 /* general */
 body {
   font-family: 'Gentium Basic', Georgia, "Times New Roman", Times, serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
   line-height: 150%;
   }
@@ -71,7 +71,7 @@ blockquote cite:before {
 }
 .post-abstract {
   color: rgb(40, 40, 40);
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
   line-height: 150%;
@@ -387,7 +387,10 @@ h2, h3, h4, h5 {
 
 /* post page */
 .post-title {
-  color: 00cd00;
+  color: #00cd00;
+}
+.post a, .post a:visited, .post a:active, .post a:hover {
+  color: rgb(56, 118, 29);
 }
 .info {
   background-color: rgb(220,240,220);
