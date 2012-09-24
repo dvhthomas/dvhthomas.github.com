@@ -1,15 +1,19 @@
 ---
 layout: default
 ---
-<article class="module post">
+<article class="module post" itemscope="" itemtype="http://schema.org/BlogPosting">
 	<header>
-		<h1 class="post-title"><i class="icon-bookmark"></i>{{ page.title }}</h1>
-		<p class="post-abstract">{{ page.abstract }}</p>
+		<h1 class="post-title" itemprop="name"><i class="icon-bookmark"></i>{{ page.title }}</h1>
+		<p class="post-abstract" itemprop="headline">{{ page.abstract }}</p>
 	</header>
+	<div itemprop="articleBody">
 {{ content }}
+	</div>
 <footer>
 		<ul class="post-meta">
-			<li class="icon-calendar">{{ page.date | date_to_long_string }}</li>
+			<li class="icon-calendar">
+				<span datetime="{{post.date | date_to_xmlschema}}" itemprop="datePublished">{{ page.date | date_to_long_string }}</span>
+			</li>
 			<li class="icon-paper-clip"><a href="{{ page.url }}" title="permalink">permalink</a></li>
 			<li class="icon-tags">{{ page.tags | array_to_sentence_string }}</li>
 		</ul>
