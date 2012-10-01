@@ -32,19 +32,14 @@ title: Digits by Me
 	<!-- Pagination links -->
 	<div class="pagination">
 		{% if paginator.previous_page %}
-		  {% if paginator.page > 2 %}
-		  <a href="/page{{paginator.previous_page}}" class="previous">previous</a>
-		  {% else %}
-		  <a href="/" class="previous">previous</a> 
+		  {% if paginator.page > 1 %}
+		  <a href="/page{{paginator.previous_page}}" class="previous">&laquo; previous</a>
 		  {% endif %}
 		{% else %}
-		<span class="previous">previous</span>
 		{% endif %}
-		<span class="page_number"> :: page {{ paginator.page }} of {{ paginator.total_pages }} :: </span>
+		<span class="page_number"> {{ paginator.page }} of {{ paginator.total_pages }} </span>
 		{% if paginator.next_page %}
-		<a href="/page{{paginator.next_page}}" class="next">next</a>
-		{% else %}
-		<span class="next">next</span>
+		<a href="/page{{paginator.next_page}}" class="next">next &raquo;</a>
 		{% endif %}
 	</div>
 </section>

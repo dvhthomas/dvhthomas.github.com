@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Resizing images on a Mac"
-abstract: "How to automatic a really boring manual process"
+abstract: "How to automate a really boring manual process"
 category: 
 tags: [tools]
 ---
