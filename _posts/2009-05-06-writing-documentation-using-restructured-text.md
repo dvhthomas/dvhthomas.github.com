@@ -70,7 +70,7 @@ As long as Python is installed with the Sphinx and docutils bits, that is all yo
 
 The result is a very professional looking version of the documentation in PDF. The great part is that the glossary of terms is still all hyperlinked within the document, as are the table of contents and index. Sweet.
 
-![HTML documentation output](images/rst-html.png)
+![HTML documentation output](/images/rst-html.png)
 
 The PDF output for the glossary. In the HTML this is a Definition List.
 
