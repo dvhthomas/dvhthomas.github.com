@@ -18,8 +18,9 @@ article img {
 }
 pre, code {
   font-size: .8em;
-  font-family: 'Monaco', 'Consolas', monospace;
-}
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+} 
 pre {
   background-color: rgb(245, 245, 245);
   border-left: 2px solid #ccc;
