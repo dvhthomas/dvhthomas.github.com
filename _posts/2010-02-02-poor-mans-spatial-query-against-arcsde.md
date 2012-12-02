@@ -7,7 +7,7 @@ tags: [esri, sql]
 ---
 I pretty much forget this every single time that I need to do a quick minimum bounding extent (MBE) or 'bounding box' query in ArcSDE. The ArcObjects alternative is just too painful to deal with when you simply need the extent of a feature, and SQL does the trick.
 
-{%highlight sql%}
+```sql
 use sde_database
 go
 declare @meter nvarchar(20)
@@ -23,6 +23,6 @@ select b.OBJECTID, f.eminx,f.eminy from gis.f155 f
 inner join gis.WMETER b
  on f.fid=b.Shape
 where b.SerialNumber = @meter;
-{%endhighlight%}
+```
 
 Like I said, stupid simple but I still have to [look it up](http://webhelp.esri.com/arcgisdesktop/9.3/index.cfm?TopicName=Feature_classes_in_a_geodatabase_in_SQL_Server) every darn time.
