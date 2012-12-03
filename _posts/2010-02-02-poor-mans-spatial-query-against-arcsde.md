@@ -7,6 +7,14 @@ tags: [esri, sql]
 ---
 I pretty much forget this every single time that I need to do a quick minimum bounding extent (MBE) or 'bounding box' query in ArcSDE. The ArcObjects alternative is just too painful to deal with when you simply need the extent of a feature, and SQL does the trick.
 
+a test
+
+```js
+(function() {
+  console.log('hello');
+});
+```
+
 ```sql
 use sde_database
 go
