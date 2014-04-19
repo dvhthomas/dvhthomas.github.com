@@ -13,7 +13,7 @@ More specifically, If you only know one language, no matter how well you know it
 
 ### My Take
 
-Amen! I was just telling Kirk that the only reason my C# is doing as well as it is (I'm modest too) is that I read a lot of Ruby and Python recently. Lambdas and other functional bits like list comprehensions and map/reduce have deepened my understanding of LINQ and the whole Func/Action thing. "I'm a .NET Developer" to me sounds a bit silly. How about "I've done a lot of .NET work but give me a web connection and some good source code to look at and I could do the project in [INSERT LANGUAGE HERE]."
+Amen! I was just telling Kirk that the only reason my C# is doing as well as it is (I'm modest too) is that I read a lot of Ruby and Python recently. Lambdas and other functional bits like list comprehensions and map/reduce have deepened my understanding of LINQ and the whole Func/Action thing. "I'm a .NET Developer" to me sounds a bit silly. How about "I've done a lot of .NET work but give me a web connection and some good source code to look at and I could do the project in INSERT LANGUAGE HERE."
 
 ## If you're a developer, you should be able to write code
 
