@@ -1,4 +1,3 @@
-pygments: true
 exclude: ['Rakefile', 'serve.sh']
 paginate: 9
 markdown: kramdown
